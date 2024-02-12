@@ -1,7 +1,7 @@
-import './NavBar.module.css'
+import './NavBar.css'
 import RegLog from './RegLog'
 
-export default function NavBar(){
+export default function NavBar() {
     return (
         <div className="NavBarWrapper">
             <div className='content phone'>手机</div>
@@ -13,7 +13,9 @@ export default function NavBar(){
             <div className='content IoT'>生态链产品</div>
             <div className='content separator'>|</div>
             <div className='content support'>技术支持</div>
-            <RegLog />
+            <div className='RegLog'>
+                <RegLog />
+            </div>
         </div>
     )
 }
