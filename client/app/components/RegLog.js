@@ -1,4 +1,4 @@
-import './RegLog.module.css'
+import './RegLog.css'
 export default function RegLog(){
     return (
         <div className='RegLogWrapper'>
