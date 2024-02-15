@@ -6,8 +6,10 @@ import { store } from "./store/store";
 export default function Home() {
   return (
     <Provider store={store}>
+      <div>
       <NavBar />
       <Body />
+      </div>
     </Provider>
   );
 }

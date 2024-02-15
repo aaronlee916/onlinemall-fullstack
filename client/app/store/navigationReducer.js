@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export default navigationReducer=createSlice({
+export const navigationReducer=createSlice({
     name:'navigation',
     initialState:{
         tabBar:'Phone'
@@ -13,3 +13,5 @@ export default navigationReducer=createSlice({
         switchSupport:(state)=>{state.tabBar='Support'},
     }
 })
+export const {switchPhone,switchPC,switchMisc,switchSupport} = navigationReducer.actions
+export default navigationReducer.reducer
