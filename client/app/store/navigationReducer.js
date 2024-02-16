@@ -13,5 +13,5 @@ export const navigationReducer=createSlice({
         switchSupport:(state)=>{state.tabBar='Support'},
     }
 })
-export const {switchPhone,switchPC,switchMisc,switchSupport} = navigationReducer.actions
+export const {switchPhone,switchPC,switchIoT,switchMisc,switchSupport} = navigationReducer.actions
 export default navigationReducer.reducer

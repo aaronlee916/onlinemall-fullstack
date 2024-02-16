@@ -1,15 +1,14 @@
-import { Provider } from "react-redux";
 import Body from "./components/Body";
 import NavBar from "./components/NavBar";
-import { store } from "./store/store";
+import { Providers } from "./store/Providers";
 
 export default function Home() {
   return (
-    <Provider store={store}>
-      <div>
+   <Providers>
+     <div>
       <NavBar />
       <Body />
-      </div>
-    </Provider>
+    </div>
+   </Providers>
   );
 }
